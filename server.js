@@ -166,6 +166,11 @@ app.get('/tv/:tmdbId/:season/:episode', async (req, res) => {
   }
 });
 
+// Add at the top, after app initialization
+app.get('/', (req, res) => {
+  res.send('Server is running!');
+});
+
 app.listen(PORT, () => {
   console.log(`🚀 Server running at http://localhost:${PORT}`);
 });
