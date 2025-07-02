@@ -2,8 +2,8 @@ const express = require('express');
 const axios = require('axios');
 
 const app = express();
-const PORT = 3000;
-const TMDB_API_KEY = '1e2d76e7c45818ed61645cb647981e5c';
+const PORT = process.env.PORT || 3000; // <-- Use Railway's provided port
+const TMDB_API_KEY = process.env.TMDB_API_KEY || '1e2d76e7c45818ed61645cb647981e5c';
 
 // === 1. Your original subjectId extractor ===
 function extractSubjectId(html, movieTitle) {
