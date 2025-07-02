@@ -1,12 +1,25 @@
 {
   "name": "vidscr.vip-scraper",
   "version": "1.0.0",
-  "description": "",
-  "keywords": [],
+  "description": "A scraper for vidscr.vip and moviebox.ng using TMDb IDs.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "scraper",
+    "moviebox",
+    "tmdb",
+    "api"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^1.10.0",
     "express": "^5.1.0"
-    }
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
 }
